@@ -1,0 +1,30 @@
+[general]
+icon=icon.png
+name=Water Masking Plugin
+qgisMinimumVersion=3.0
+qgisMaximumVersion=4.99
+version=1.0
+author=Mohamed Aly Nasef
+email=Eng.m.nasef2017@gmail.com
+description=A comprehensive tool for extracting water masks and generating smoothed waterbody polygons from multispectral satellite imagery.
+
+about=<h3>Water Masking Plugin: Advanced Waterbody Extraction</h3>
+    <p><b>Water Masking Plugin</b> is a specialized QGIS toolkit designed to extract accurate water masks and generate smoothed waterbody polygons from multispectral satellite imagery.</p>
+    
+    <p><b>Core Workflow:</b></p>
+    <ul>
+        <li><b>1. Indices Calculation:</b> Calculates NDVI (Normalized Difference Vegetation Index), MNDWI (Modified Normalized Difference Water Index), and NWI (New Water Index).</li>
+        <li><b>2. Water Masking Equation:</b> Uses the equation (MNDWI &gt; 0) AND (NWI &gt; 0) AND (NDVI &lt; 0.1) to extract the water mask.</li>
+        <li><b>3. Noise Removal:</b> Applies a sieve filter to remove isolated noise pixels.</li>
+        <li><b>4. Geometry Smoothing:</b> Rounds the sharp stair-step edges of the final polygon.</li>
+    </ul>
+
+    <p><i>Developed by Mohamed Aly Nasef</i></p>
+
+homepage=https://github.com/developer/water-masking-plugin
+repository=https://github.com/developer/water-masking-plugin
+tracker=https://github.com/developer/water-masking-plugin/issues
+
+tags=water, mask, remote sensing, satellite, polygon, smoothing, hydrology
+category=Raster
+changelog=v1.0: Initial release.

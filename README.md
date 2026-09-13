@@ -198,4 +198,4 @@ All outputs are written to the directory specified in `Output Folder`:
 * **Author:** Mohamed Aly Nasef
 * **Email:** [Eng.m.nasef2017@gmail.com](mailto:Eng.m.nasef2017@gmail.com)
 * **GitHub:** [https://github.com/Nasef2017/Water-Masking](https://github.com/Nasef2017/Water-Masking)
-* **License:** GNU General Public License v3.0 (GPLv3)
+* **License:** Apache License v2.0

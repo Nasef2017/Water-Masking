@@ -3,28 +3,29 @@ icon=icon.png
 name=Water Masking Plugin
 qgisMinimumVersion=3.0
 qgisMaximumVersion=4.99
-version=1.0
+version=2.1
 author=Mohamed Aly Nasef
 email=Eng.m.nasef2017@gmail.com
-description=A comprehensive tool for extracting water masks and generating smoothed waterbody polygons from multispectral satellite imagery.
+description=Advanced high-performance scientific tool for extracting water masks and generating smoothed waterbody polygons from multispectral satellite imagery.
 
-about=<h3>Water Masking Plugin: Advanced Waterbody Extraction</h3>
-    <p><b>Water Masking Plugin</b> is a specialized QGIS toolkit designed to extract accurate water masks and generate smoothed waterbody polygons from multispectral satellite imagery.</p>
+about=<h3>Water Masking Plugin: Scientific Waterbody Extraction</h3>
+    <p><b>Water Masking Plugin</b> is a specialized QGIS toolkit designed to extract accurate water masks and generate smoothed waterbody polygons from multispectral satellite imagery using a high-performance scientific engine.</p>
     
-    <p><b>Core Workflow:</b></p>
+    <p><b>Core Capabilities:</b></p>
     <ul>
-        <li><b>1. Indices Calculation:</b> Calculates NDVI (Normalized Difference Vegetation Index), MNDWI (Modified Normalized Difference Water Index), and NWI (New Water Index).</li>
-        <li><b>2. Water Masking Equation:</b> Uses the equation (MNDWI &gt; 0) AND (NWI &gt; 0) AND (NDVI &lt; 0.1) to extract the water mask.</li>
-        <li><b>3. Noise Removal:</b> Applies a sieve filter to remove isolated noise pixels.</li>
-        <li><b>4. Geometry Smoothing:</b> Rounds the sharp stair-step edges of the final polygon.</li>
+        <li><b>7 Water Masking Methods:</b> Otsu NDWI, Manual NDWI, 3 Indices, Smart Hybrid Auto, Tiled Adaptive Otsu, Modified AWEI Single-SWIR, and Spectral Slope Decision Tree.</li>
+        <li><b>Geodesic Ellipsoidal Geometry:</b> Physical area (ha, km²) and perimeter measurements on the WGS-84 ellipsoid regardless of projection (UTM or EPSG:4326).</li>
+        <li><b>Vector Polygon Override:</b> Direct support for custom ROI boundaries.</li>
+        <li><b>Noise Removal & Smoothing:</b> Sieve filtering for isolated pixel suppression and sub-pixel edge smoothing for cartographic coastal boundaries.</li>
     </ul>
 
     <p><i>Developed by Mohamed Aly Nasef</i></p>
 
-homepage=https://github.com/developer/water-masking-plugin
-repository=https://github.com/developer/water-masking-plugin
-tracker=https://github.com/developer/water-masking-plugin/issues
+homepage=https://github.com/Nasef2017/Water-Masking
+repository=https://github.com/Nasef2017/Water-Masking
+tracker=https://github.com/Nasef2017/Water-Masking/issues
 
-tags=water, mask, remote sensing, satellite, polygon, smoothing, hydrology
+tags=water, mask, remote sensing, satellite, polygon, smoothing, hydrology, bathymetry, shoreline, sentinel-2, landsat, otsu, ndwi, mndwi, awei
 category=Raster
-changelog=v1.0: Initial release.
+changelog=v2.1: Fixed Tiled Adaptive Otsu class-weight calculation bug; implemented geodesic/ellipsoidal area & perimeter measurements via QgsDistanceArea (resolving EPSG:4326 geographic CRS distortion); protected division-by-zero in spectral slope tree; optimized memory footprint; enriched in-app Processing parameter documentation.
+v2.0: Added Tiled Adaptive Otsu, Modified AWEI Single-SWIR, Spectral Slope Tree, and NumPy/RasterIO high-performance backend.

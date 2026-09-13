@@ -5,6 +5,7 @@ Advanced Scientific Waterbody Extraction & Shoreline Segmentation
 Zero External Dependencies (Pure QGIS + NumPy Native Engine)
 Global Log-Transformation Pipeline
 Author: Mohamed Aly Nasef
+License: Apache-2.0
 """
 
 import json

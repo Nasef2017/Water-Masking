@@ -27,5 +27,6 @@ tracker=https://github.com/Nasef2017/Water-Masking/issues
 
 tags=water, mask, remote sensing, satellite, polygon, smoothing, hydrology, bathymetry, shoreline, sentinel-2, landsat, otsu, ndwi, mndwi, awei
 category=Raster
+license=Apache-2.0
 changelog=v2.1: Fixed Tiled Adaptive Otsu class-weight calculation bug; implemented geodesic/ellipsoidal area & perimeter measurements via QgsDistanceArea (resolving EPSG:4326 geographic CRS distortion); protected division-by-zero in spectral slope tree; optimized memory footprint; enriched in-app Processing parameter documentation.
 v2.0: Added Tiled Adaptive Otsu, Modified AWEI Single-SWIR, Spectral Slope Tree, and NumPy/RasterIO high-performance backend.
